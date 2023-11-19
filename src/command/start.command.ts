@@ -209,6 +209,7 @@ export class StartCommand extends Command {
     });
 
     this.bot.on(message('contact'), (ctx) => {
+      console.log(ctx.message.contact)
       ctx.session.numberRequested = true;
       ctx.session.userLogin = ctx.message.from.username;
       ctx.session.userName = ctx.message.from.first_name;
