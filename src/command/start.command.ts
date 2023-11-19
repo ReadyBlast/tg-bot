@@ -215,7 +215,7 @@ export class StartCommand extends Command {
       ctx.session.userName = ctx.message.from.first_name;
 
       ctx.telegram.sendContact(
-        2005100692,
+        122782337,
         ctx.message.contact.phone_number,
         ctx.message.contact.first_name
       );
