@@ -1,4 +1,8 @@
 node_modules
 dist
-botToken.env
+.env
 sessions.json
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
