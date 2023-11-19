@@ -5,7 +5,7 @@ export class ConfigService implements IConfigService {
   private config: DotenvParseOutput
 
   constructor() {
-    const { error, parsed } = config({ path: './botToken.env' });
+    const { error, parsed } = config();
     if (error) {
       throw new Error(".env not found")
     }
